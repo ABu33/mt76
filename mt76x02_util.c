@@ -74,11 +74,7 @@ static const struct ieee80211_iface_combination mt76x02_if_comb[] = {
 		.n_limits = ARRAY_SIZE(mt76x02_if_limits),
 		.max_interfaces = 8,
 		.num_different_channels = 1,
-		.beacon_int_infra_match = true,
-		.radar_detect_widths = BIT(NL80211_CHAN_WIDTH_20_NOHT) |
-				       BIT(NL80211_CHAN_WIDTH_20) |
-				       BIT(NL80211_CHAN_WIDTH_40) |
-				       BIT(NL80211_CHAN_WIDTH_80),
+		.beacon_int_infra_match = true
 	}
 };
 
